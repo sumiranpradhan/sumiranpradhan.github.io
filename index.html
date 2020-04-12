@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Pictures Gallery | Welcome</title>
+  <link rel="icon" type="img/png" href="img.png"/>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://kit.fontawesome.com/fe786c7701.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body style="background-color:#2d323e;">
+	<div class="container">
+		<div class="jumbotron mt-2" id="div11">
+			<div class="btn-group" id="utibut">
+  				<button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color:#2d323e; ">Utilities</button>
+  				<div class="dropdown-menu">
+    				<button class="dropdown-item" id="zodcal_button">
+    					Know your Zodiac
+    				</button>
+					<button class="dropdown-item" id="calbmi_button">
+						 BMI Calculator
+					</button>
+  				</div>
+			</div>
+
+
+			<h1 id="h11"> My Pictures Gallery</h1>
+		</div>
+		<div id="bdiv">
+			<button type="button" class="btn btn-primary" id="movb11">Movies</button>
+			<button type="button" class="btn btn-warning" id="fampb11">Favourite Personalities</button>
+			<button type="button" class="btn btn-danger" id="ranb11">Random_gen</button>
+		</div>
+		<div id="zodcal">
+			<center><b>Know your Zodiac Sign :</b></center>
+			<form name="zodiac">
+				<center>
+					<table bgcolor="#ffffff" border="2"  bordercolor="#2d323e" rules="none" cellspacing="0" cellpadding="4">
+						<tr style="color:#2d323e;"><td><b><i>Year : </i></b></td>
+						<td ><div align="right"><input type="text" size="15" name="year" value="Enter Birth Year" onClick=value=""></div></td>
+
+						<tr style="color:#2d323e;"><td><b><i>Month :</i></b></td>
+						<td style="color:#2d323e;"><div align="right">
+						<select name="month">
+							<option value="x">Enter Birth Month</option>
+							<option value="1">January</option><option value="2">February</option><option value="3">March</option>
+							<option value="4">April</option><option value="5">May</option><option value="6">June</option>
+							<option value="7">July</option><option value="8">August</option><option value="9">September</option>
+							<option value="10">October</option><option value="11">November</option>
+							<option value="12">December</option></select></div></td>
+						</tr>
+						<tr style="color:#2d323e;"><td><b><i>Day : </i></b></td>
+						<td><div align="right"><input type="text" name="date"value="Enter Birth Day" size="15" onClick=value=""></td>
+
+						<td><input type="button" value="Calculate" style="	background-color:#2c3e50; color:#ecf0f1;" onClick="signs()"></td></tr></div>
+						<tr style="color:#2d323e;""><td><b><i>Sun Sign :</i></b></td>
+						<td><div align="right"><input type="text" name="sign" size="15" value="" align="right"></div</td></tr>
+						<td><!--This empty field is just for appearance--></td>
+						<tr style="color:#2d323e;""><td><b><i>Chinese Sign :</i></b></td>
+						<td><div align="right"><input type="text" name="csign" size="15"></div></td>
+						<td><!--This empty field is just for appearance--></td></tr>
+					</table>
+				</center>
+			</form>
+
+			<button type="button" class="btn btn-dark" id="zodcal_hide">Hide Zodiac Calculator</button>
+		</div>
+<!-- HEYYYYYYYYYYYYYYYYYYYYYY-->
+
+
+<div id="calbmi">
+	<center><b>Know your BMI  :</b></center>
+	<form name="bmi">
+		<center>
+			<table bgcolor="#ffffff" border="2"  bordercolor="#2d323e" rules="none" cellspacing="0" cellpadding="4">
+				<tr style="color:#2d323e;"><td><b><i>Weight(kg) : </i></b></td>
+				<td ><div align="right"><input type=TEXT size="15" name=weight  value="Enter your weight" onClick=value=""></div></td>
+				<tr style="color:#2d323e;"><td><b><i>Height(cm) : </i></b></td>
+				<td ><div align="right"><input type=TEXT size="15" name=height  value="Enter your height"  onClick=value=""></td>
+
+				<td><input type="button" value="Calculate" style="background-color:#2c3e50; color:#ecf0f1;" onClick="computeform(this.form)"></td></tr></div>
+				<!--td><input type="reset" value = "Reset" onClick="ClearForm(this.form)"-->
+
+				<tr><TD><DIV ALIGN=CENTER style="color:#2d323e;"><b> <i>Your BMI: </i> </b></DIV></TD>
+					<TD><DIV ALIGN=CENTER style="color:#2d323e;"><b><i>My Comment:</i></b></DIV></TD></tr>
+
+
+
+
+
+				<tr>	<TD><INPUT TYPE=TEXT NAME=bmi     SIZE=8 ></TD>
+					<TD><INPUT TYPE=TEXT NAME=my_comment size=45></TD></tr>
+				</TABLE>
+
+
+			</form>
+
+			<button type="button" class="btn btn-dark" id="calbmi_hide">Hide BMI Calculator</button>
+			<HR>
+			<B style="color:red;align:center;">Disclaimer :</B> This form is based on the calculation of
+			<A HREF="http://phaster.com/unpretentious/bmi.html"><I>"Body Mass Index"</I></A>
+			and is only meant to be a demonstration of how Javascript(tm) could be used
+			on a Web Page. Information it contains may not be accurate and is not designed
+			or intended to serve as medical advice. I am not liable for any physical or
+			psychological damages suffered as a result of using this script.
+
+		<hr>
+
+		</div>
+
+		<div id="mov">
+			<div class="row">
+				<div id="d1" class="col-lg-4 col-sm-6">
+					<img src="https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_QL50_.jpg" class="img-thumbnail">
+				</div>
+				<div id="d2" class="col-lg-4 col-sm-6">
+						<img src="https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_QL50_SY1000_CR0,0,704,1000_AL_.jpg" class="img-thumbnail">
+				</div>
+				<div id="d3" class="col-lg-4 col-sm-6">
+					<img src="https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_QL50_SY1000_CR0,0,675,1000_AL_.jpg" class="img-thumbnail">
+				</div>
+			</div>
+			<div class="row">
+				<div id="d4" class="col-lg-4 col-sm-6">
+						<img src="https://m.media-amazon.com/images/M/MV5BNzA5ZDNlZWMtM2NhNS00NDJjLTk4NDItYTRmY2EwMWZlMTY3XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_QL50_SY1000_CR0,0,675,1000_AL_.jpg" class="img-thumbnail">
+				</div>
+				<div id="d5" class="col-lg-4 col-sm-6">
+						<img src="https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_QL50_SY1000_CR0,0,675,1000_AL_.jpg" class="img-thumbnail">
+				</div>
+				<div id="d6" class="col-lg-4 col-sm-6">
+						<img src="https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_QL50_SY1000_CR0,0,665,1000_AL_.jpg" class="img-thumbnail">
+				</div>
+			</div>
+			<div class="row">
+				<div id="d7" class="col-lg-4 col-sm-6">
+						<img src="https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_QL50_SY1000_SX675_AL_.jpg" class="img-thumbnail">
+				</div>
+				<div id="d8" class="col-lg-4 col-sm-6">
+						<img src="https://m.media-amazon.com/images/M/MV5BMjA4NDI0MTIxNF5BMl5BanBnXkFtZTYwNTM0MzY2._V1_QL50_.jpg" class="img-thumbnail">
+				</div>
+				<div id="d9" class="col-lg-4 col-sm-6">
+						<img src="https://m.media-amazon.com/images/M/MV5BNGVjNWI4ZGUtNzE0MS00YTJmLWE0ZDctN2ZiYTk2YmI3NTYyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_QL50_SY1000_CR0,0,674,1000_AL_.jpg" class="img-thumbnail">
+				</div>
+			</div>
+		</div>
+
+
+		<!---FAMOUS-->
+
+
+		<div id="famp" id="shuffle2">
+			<div class="row">
+				<div id="d10" class="col-lg-4 col-sm-6">
+					<img src="https://cdn.wealthygorilla.com/wp-content/uploads/2018/07/Richest-Actors-Will-Smith.webp" class="img-thumbnail">
+				</div>
+				<div id="d11" class="col-lg-4 col-sm-6">
+						<img src="https://cdn.wealthygorilla.com/wp-content/uploads/2017/08/Richest-Athletes-David-Beckham.webp" class="img-thumbnail">
+				</div>
+				<div id="d12" class="col-lg-4 col-sm-6">
+					<img src="https://cdn.wealthygorilla.com/wp-content/uploads/2018/02/Richest-Comedians-Rowan-Atkinson.webp" class="img-thumbnail">
+				</div>
+			</div>
+			<div class="row">
+				<div id="d13" class="col-lg-4 col-sm-6">
+						<img src="https://cdn.wealthygorilla.com/wp-content/uploads/2018/07/Richest-Actors-Jackie-Chan.webp" class="img-thumbnail">
+				</div>
+				<div id="d14" class="col-lg-4 col-sm-6">
+						<img src="https://cdn.wealthygorilla.com/wp-content/uploads/2017/07/Richest-DJs-Avicii.webp" class="img-thumbnail">
+				</div>
+				<div id="d15" class="col-lg-4 col-sm-6">
+						<img src="https://cdn.wealthygorilla.com/wp-content/uploads/2017/08/Richest-Athletes-Kobe-Bryant.webp" class="img-thumbnail">
+				</div>
+			</div>
+			<div class="row">
+				<div id="d16" class="col-lg-4 col-sm-6">
+						<img src="https://cdn.wealthygorilla.com/wp-content/uploads/2017/08/Richest-Athletes-Michael-Jordan.webp" class="img-thumbnail">
+				</div>
+				<div id="d17" class="col-lg-4 col-sm-6">
+						<img src="https://cdn.wealthygorilla.com/wp-content/uploads/2017/07/Richest-DJs-Calvin-Harris.webp" class="img-thumbnail">
+				</div>
+				<div id="d18" class="col-lg-4 col-sm-6">
+						<img src="https://cdn.wealthygorilla.com/wp-content/uploads/2018/07/Richest-Actors-Robert-Downey-Jr.webp" class="img-thumbnail">
+				</div>
+			</div>
+			<div class="row">
+				<div id="d19" class="col-lg-4 col-sm-6">
+						<img src="https://cdn.wealthygorilla.com/wp-content/uploads/2018/07/Richest-Actors-Amitabh-Bachchan.webp" class="img-thumbnail">
+				</div>
+				<div id="d20" class="col-lg-4 col-sm-6">
+						<img src="https://cdn.wealthygorilla.com/wp-content/uploads/2017/11/Richest-Singers-Beyonce.webp" class="img-thumbnail">
+				</div>
+				<div id="d21" class="col-lg-4 col-sm-6">
+						<img src="https://cdn.wealthygorilla.com/wp-content/uploads/2017/08/Richest-Athletes-Floyd-Mayweather.webp" class="img-thumbnail">
+				</div>
+			</div>
+			<div class="row">
+				<div id="d22" class="col-lg-4 col-sm-6">
+						<img src="https://cdn.wealthygorilla.com/wp-content/uploads/2018/02/Richest-Comedians-Ellen-Degeneres.webp" class="img-thumbnail">
+				</div>
+				<div id="d23" class="col-lg-4 col-sm-6">
+						<img src="https://cdn.wealthygorilla.com/wp-content/uploads/2017/08/Richest-Athletes-Cristiano-Ronaldo.webp" class="img-thumbnail">
+				</div>
+				<div id="d24" class="col-lg-4 col-sm-6">
+						<img src="https://cdn.wealthygorilla.com/wp-content/uploads/2017/08/Richest-Athletes-Roger-Federer.webp" class="img-thumbnail">
+				</div>
+			</div>
+		</div>
+	</div>
+
+  <div class="container" style="padding: 1.5%; ">
+    <div class="footer" style="background-color:#ecf0f1; color:#2d323e;; text-align: center; box-shadow: 1px 1px 6px 0px #000; padding: 5px;">
+      <h1 style="font-family=Times New Roman, serif;"><b>Contact Me</h1>
+      <h3 style="font-family: Zapf Chancery, cursive;"><u>Name</u> : Sumiran Pradhan</h3>
+      <h3 style="font-family: Zapf Chancery, cursive;"><u>Regn. No.</u> : 2018000291</h3>
+      <h3 style="font-family: Zapf Chancery, cursive;"><u>Email</u> : sumiranpradhan8@gmail.com</h3>
+
+
+    </div>
+  </div>
+
+
+	<script type="text/javascript" src="gallery.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

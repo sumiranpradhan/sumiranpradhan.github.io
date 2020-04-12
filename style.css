@@ -1,0 +1,74 @@
+
+
+
+#bdiv
+{
+	padding-bottom: 2.5%;
+	text-align: center;
+}
+
+#div11
+{
+	background-color:#ecf0f1;
+	color:#2c3e50;
+	padding-top: 0px;
+	padding-bottom: 10px;
+}
+
+#h11
+{
+  font-family:Georgia, serif;
+	font-size: 450%;
+	text-align: center;
+  background: url(https://png.pngtree.com/thumb_back/fh260/background/20190727/pngtree-minimalistic-white-honeycomb-paper-cut-wind-business-background-image_285722.jpg);
+
+}
+
+#movb11
+{
+	margin-right: 15px;
+  background-color: #0892d0;
+}
+
+#fampb11
+{
+	margin-right: 15px;
+  background-color: #3af120;
+}
+
+#utibut
+{
+	padding-left: 94%;
+	padding-top: 1%;
+}
+#zodcal
+{
+  color:#ecf0f1;
+  margin: auto;
+}
+#zodcal_hide
+{
+	margin-left: 42%;
+	margin-bottom: 20px;
+  color:#ecf0f1;
+
+
+}
+
+#calbmi
+{
+	text-align: center;
+  color:#ecf0f1;
+}
+
+#calbmi_hide
+{
+	margin-top: 5px;
+	margin-bottom: 20px;
+  color:#ecf0f1;
+}
+
+#contact
+{
+	font-size: 25px;
+}
